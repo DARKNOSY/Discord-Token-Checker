@@ -9,7 +9,7 @@ import discord
 import aiohttp
 import asyncio
 
-TOKENS_FILE = "tokens.txt"  # Name of the text file containing Discord tokens
+TOKENS_FILE = "tokens.txt" 
 
 BADGE_NAMES = {
     1: "Discord Employee",
@@ -32,7 +32,6 @@ async def fetch_user_details(token):
                 "Authorization": f"Bot {token}" if token.startswith("Bot ") else token
             }
 
-            # Fetch user data from Discord API
             async with session.get("https://discord.com/api/v10/users/@me", headers=headers) as response:
                 if response.status == 200:
                     user_data = await response.json()

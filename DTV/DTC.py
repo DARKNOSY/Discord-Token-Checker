@@ -1,13 +1,8 @@
-import sys
-import os
+import sys, os, discord, aiohttp, asyncio
 
 os.system("@echo off & cls")
 os.system("color 3")
-os.system("title Discord Token Verifier / @DARKNOSY")
-
-import discord
-import aiohttp
-import asyncio
+os.system("title Discord Token Checker / @DARKNOSY")
 
 TOKENS_FILE = "tokens.txt" 
 

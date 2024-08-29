@@ -1,4 +1,5 @@
-# DiscordTokenVerifier
+# Discord Token Checker
+
 Made for both accounts and bots
 
 --------------------------------
